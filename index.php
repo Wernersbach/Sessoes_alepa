@@ -23,18 +23,19 @@ $authMatricula = Autenticacao::authMat($mat, $pass);
 		<!--FontAwesome-->
 		<link href="./src/assets/libs/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
 
-	  	<!--CSS personalizado-->
-
 	  	<!--jsPDF-->
 	  	<!--<script type="text/javascript" src="assets/js/jsPDF/jspdf.min.js"></script>-->
 
-	  	<!--Scripts-->
+		<!--dataTable-->
+		<link rel="stylesheet" type="text/css" href="./src/assets/libs/DataTables/datatables.min.css"/>
+
+	  	
+		<!--CSS personalizado-->
 
 	</head>
 	<body>
 		<?php
             $token = isset($_SESSION['auth']) ? $token = $_SESSION['auth'] : $token = null;
-
             if( is_null($token) ){
                 include_once './src/views/login.php';
             } else {
@@ -44,5 +45,12 @@ $authMatricula = Autenticacao::authMat($mat, $pass);
 
 	    <script type="text/javascript" src="./src/assets/libs/@popperjs/umd/popper.min.js"></script>
 	    <script type="text/javascript" src="./src/assets/libs/bootstrap-5.0.0-beta2/js/bootstrap.min.js"></script>
+
+		<!--Jquery :-: -->
+		<script src="./src/assets/libs/jquery/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="./src/assets/libs/DataTables/datatables.min.js"></script>
+
+		<!--Scripts personalizados-->
+		<script type="text/javascript" src="./src/assets/js/tabelas.js"></script>
 	</body>
 </html>
