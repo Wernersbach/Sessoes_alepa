@@ -29,9 +29,10 @@ $authMatricula = Autenticacao::authMat($mat, $pass);
 		<!--dataTable-->
 		<link rel="stylesheet" type="text/css" href="./src/assets/libs/DataTables/datatables.min.css"/>
 
-	  	
 		<!--CSS personalizado-->
-
+		<link rel="stylesheet" type="text/css" href="./src/assets/css/bg.css" />
+		<link rel="stylesheet" type="text/css" href="./src/assets/css/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="./src/assets/css/item.css" />
 	</head>
 	<body>
 		<?php
